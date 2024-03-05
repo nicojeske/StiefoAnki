@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "stiefoanki"
+version = "0.1.0"
+description = ""
+authors = ["Nico Jeske <nico.jeske@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+ipykernel = "^6.29.3"
+setuptools = "^69.1.1"
+pyqt5 = "=5.15.10"
+pyqt5-qt5 = "=5.15.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
