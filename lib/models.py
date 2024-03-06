@@ -19,6 +19,12 @@ class Curve():
         self.control2 = (self.control2[0] + x, self.control2[1] + y)
         self.end = (self.end[0] + x, self.end[1] + y)
 
+    def round(self, precision: int):
+        self.start = (round(self.start[0], precision), round(self.start[1], precision))
+        self.control1 = (round(self.control1[0], precision), round(self.control1[1], precision))
+        self.control2 = (round(self.control2[0], precision), round(self.control2[1], precision))
+        self.end = (round(self.end[0], precision), round(self.end[1], precision))
+
     def __init__(self, start, control1, control2, end):
         self.start = start
         self.control1 = control1

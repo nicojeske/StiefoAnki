@@ -27,8 +27,6 @@ def generate_word_list(words: List[str]) -> List[Word]:
         wordList.append(Word(word, wordCurves, wordWidth))
     return wordList
 
-def render_words_to_svg(words: List[str], output: str = "output.svg"):
+def render_words_to_svg(words: List[str]):
     wordList = generate_word_list(words)
-    svg = generateSvg(wordList)
-    with open(output, "w") as file:
-        file.write(svg)
+    return generateSvg(wordList)
